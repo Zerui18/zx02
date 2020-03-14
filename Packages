@@ -1,0 +1,14 @@
+Package: com.zx02.frame
+Name: Frame
+Version: 2.0.0
+Architecture: iphoneos-arm64
+Description: Bring your iDevices to life with your favourite video wallpapers!
+Maintainer: Zerui Chen
+Author: Zerui Chen
+Section: Tweak
+Depends: mobilesubstrate, preferenceloader, firmware (> 12.1.99)
+Filename: frame-2.0.0.deb
+Size: 1071564
+MD5sum: 6f696023d3f1a0d9d96c34eced542518
+SHA1: 8ad3833af3941836727148068c208bf43bc4e941
+SHA256: 3871dc7dbb615e3e96d6559274e9d65bdff517cb7814f5d33db361e450a9cb58
