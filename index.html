@@ -5,50 +5,76 @@
     <title>ZX02's Repo</title>
   </head>
   <body>
-    <div class="chunk">
-      <div class="path"><b>/ZX02/home</b></div><br/>
-      <div id="title">Welcome to my repo!</div><br/>
-    </div>
 
-    <div class="card">
-      <b>$ <div class="keyword">cat</div> 'About Me'</b>
-    </div>
-    <div class="chunk">
-      
-      Student & iOS Developer, loves exploring new ideas! </br><br/>
-      Follow me on <a target="_blank" href="https://www.reddit.com/user/Zerui18">Reddit</a> for the latest updates.
-      
-    </div>
+    <!-- Main Page -->
+    <div id="main">
 
-    <div class="break"></div>
-
-    <div class="card">
-      <b>$ <div class="keyword">cat</div> 'Add Repo'</b>
-    </div>
-    <div class="chunk">Add my repo <a target="_blank" href="cydia://url/https://cydia.saurik.com/api/share#?https://zerui18.github.io/ZX02">HERE</a>.</div>
-    
-    <div class="break"></div>
-
-    <div class="card">
-      <b>$ <div class="keyword">ls</div> 'My Tweaks'</b>
-    </div>
-    </br>
-
-    <div id="tweaks">
-    </div>
-
-    <div class="break"></div>
-
-    <div class="chunk">© Zerui Chen 2019-2020 </div>
-
-    <div id="tweak_overlay">
-
-      <div id="tweak_overlay_card">
+      <div class="chunk">
+        <div class="path"><b>/ZX02/home</b></div><br/>
+        <div id="title">Welcome to my repo!</div><br/>
+      </div>
+  
+      <div class="card">
+        <b>$ <div class="keyword">cat</div> 'About Me'</b>
+      </div>
+      <div class="chunk">
+        
+        Student & iOS Developer, loves exploring new ideas! </br><br/>
+        Follow me on <a target="_blank" href="https://www.reddit.com/user/Zerui18">Reddit</a> for the latest updates.
         
       </div>
+  
+      <div class="break"></div>
+  
+      <div class="card">
+        <b>$ <div class="keyword">cat</div> 'Add Repo'</b>
+      </div>
+      <div class="chunk">Add my repo <a target="_blank" href="cydia://url/https://cydia.saurik.com/api/share#?https://zerui18.github.io/ZX02">HERE</a>.</div>
       
+      <div class="break"></div>
+  
+      <div class="card">
+        <b>$ <div class="keyword">ls</div> 'My Tweaks'</b>
+      </div>
+      </br>
+  
+      <div id="tweaks">
+      </div>
+  
+      <div class="break"></div>
+  
+      <div class="chunk">© Zerui Chen 2019-2020 </div>
+
     </div>
 
+    <!-- Modal for tweak details, mostly placeholders -->
+
+    <div id="tweak_overlay_card" class="hidden">
+      <div id="tweak_header">
+
+        <img id="tweak_icon"/>
+        <div id="tweak_name">
+          <div id="tweak_subtitle"></div>
+          <a target="_blank" id="tweak_get"></a>
+        </div>
+
+      </div>
+
+      <div id="tweak_miscs"></div>
+
+      <div class="tweak_heading">Screenshots</div>
+      <div style="overflow-x: scroll">
+        <div id="tweak_screens">
+        </div>
+      </div>
+
+      <div id="tweak_descriptions">
+      </div>
+      
+      <div class="break_large"></div>
+    </div>
+      
+    <script src="./assets/tweaks.js"></script>
     <script src="./assets/index.js"></script>
 
   </body>
