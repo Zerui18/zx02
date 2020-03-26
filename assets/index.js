@@ -6,6 +6,7 @@ const mainElements = {
 };
 
 const modalElements = {
+  closeButton : document.getElementById("close_btn"),
   tweakIcon : document.getElementById("tweak_icon"),
   tweakName : document.getElementById("tweak_name"),
   tweakSubtitle : document.getElementById("tweak_subtitle"),
@@ -17,8 +18,24 @@ const modalElements = {
 
 let iOSVersion;
 
-if (navigator.appVersion.indexOf("iPhone OS") != -1)
-  iOSVersion = navigator.appVersion.match(/iPhone OS (\d+_\d_\d)/)[1].split("_").map(x => parseInt(x));
+// Detect the iOS version.
+if (navigator.appVersion.indexOf("iPhone OS") != -1) {
+  // Extract browser/iOS version from navigator.
+  iOSVersion = navigator.appVersion.match(/iPhone OS (\d+_\d_?(\d)?)/)[1].split("_").map(x => parseInt(x));
+}
+else if (navigator.appVersion.indexOf("iPad;") != -1) {
+  iOSVersion = navigator.appVersion.match(/CPU OS (\d+_\d_?(\d)?) like/)[1].split("_").map(x => parseInt(x));
+}
+else if (navigator.appVersion.indexOf('Macintosh') != -1 && 'ontouchend' in document) {
+  // Bug iPad user to disable request desktop site.
+  alert("Please disable Request Desktop Site on your iDevice.");
+  document.body.innerHTML = "This site will not function as expected on an iDevice with Request Desktop Site enabled.<br><br>Please choose Request Mobile Site instead.";
+  throw "JS Exec Killed!";
+}
+// Fill 0 if needed.
+if (iOSVersion.length == 2) {
+  iOSVersion.push(0);
+}
 
 // -1 if v1 is smaller, 0 if equal, 1 if v1 is larger.
 function compareVersions(v1, v2) {
@@ -32,10 +49,10 @@ function compareVersions(v1, v2) {
 }
 
 // Shorthand function for comparing a version to the current device's version,
-// returns -1 if the current device's iOS version cannot be read.
+// returns 1 if the current device's iOS version cannot be read.
 function comparedToCurrentVersion(v) {
   if (!iOSVersion)
-    return -1;
+    return 1;
   return compareVersions(v, iOSVersion);
 }
 
@@ -63,7 +80,7 @@ function setOverlayDisplaying(tweak) {
     const minOSVersion = details.packages[i].minOSVersion;
     if (comparedToCurrentVersion(minOSVersion) == -1) {
       const id = details.packages[i].id;
-      modalElements.tweakGet.attributes.href = `cydia://url/https://cydia.saurik.com/api/share#?https://zerui18.github.io/ZX02/&package=${id}`;
+      modalElements.tweakGet.href = `cydia://url/https://cydia.saurik.com/api/share#?source=https://zerui18.github.io/ZX02/&package=${id}`;
       modalElements.tweakGet.classList.remove("red");
       modalElements.tweakGet.textContent = "Get";
       break;
@@ -95,7 +112,9 @@ function setOverlayDisplaying(tweak) {
   if (details.embedVideoURL) {
     const iframe = document.createElement("iframe");
     iframe.src = details.embedVideoURL;
+    iframe.frameBorder = 0;
     iframe.classList.add("tweak_screen");
+    iframe.id = "tweak_demo";
     screensElement.appendChild(iframe);
   }
 
@@ -125,7 +144,7 @@ function setOverlayDisplaying(tweak) {
 
     // Add description
     const descriptionElement = document.createElement("div");
-    descriptionElement.classList.add("tweak_desc");
+    descriptionElement.classList.add("tweak_para");
     descriptionElement.innerHTML = description.html;
     descriptionsElement.appendChild(descriptionElement);
   });
@@ -136,7 +155,7 @@ function setOverlayDisplaying(tweak) {
 function addTweak(tweak) {
   const contents = 
   `
-  <img src="assets/icons/${tweak.id}.png" style="width: 15vw; margin-right: 16px;" />
+  <img src="./assets/icons/${tweak.id}.png" style="width: 15vw; margin-right: 16px;" />
   <div>
     <div class="tweak_name">${tweak.name}</div>
     <div class="tweak_desc">${tweak.description}</div>
@@ -160,7 +179,7 @@ function addTweak(tweak) {
 TWEAKS.forEach(addTweak);
 
 // Configure overlay.
-mainElements.tweakOverlayCard.onclick = () => {
+modalElements.closeButton.onclick = () => {
   mainElements.tweakOverlayCard.classList.add("hidden");
   mainElements.main.classList.remove("modal_shown");
 };

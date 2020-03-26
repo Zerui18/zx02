@@ -3,13 +3,17 @@
 html {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
+  font-family: 'Avenir Next';
+}
+
+*::-webkit-scrollbar {
+  display: none;
 }
 
 body {
   background: black;
-  font-family: 'Courier New', Courier, monospace;
-  font-size: 2.5em;
-  font-weight: 500;
+  font-size: 1em;
+  font-weight: 400;
   color: white;
   height: 100%;
 }
@@ -32,25 +36,25 @@ a {
 
 #title {
   font-size: 1.3em;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 /* Div blocks */
 
 .card {
   background-color: #1d1d1d;
-  padding: 16pt;
-  margin: 32pt 16pt;
-  border-radius: 24pt;
+  padding: 8pt;
+  margin: 8pt 4pt;
+  border-radius: 12pt;
   overflow: auto;
 }
 
 .tweak_card {
   background-color: #1d1d1d;
-  padding: 16pt;
-  margin: 0 16pt;
-  margin-bottom: 36pt;
-  border-radius: 24pt;
+  padding: 8pt;
+  margin: 0 4pt;
+  margin-bottom: 24pt;
+  border-radius: 12pt;
   overflow: auto;
   display: flex;
   position: relative;
@@ -61,16 +65,16 @@ a {
 /* Card without bg */
 
 .chunk {
-  padding: 16pt;
-  margin: 32pt 16pt;
+  padding: 8pt;
+  margin: 8pt 4pt;
 }
 
 .break {
-  height: 5vh;
+  height: 3vh;
   width: 100%;
 }
 .break_large {
-  height: 30vh;
+  height: 20vh;
   width: 100%;
 }
 
@@ -90,7 +94,7 @@ a {
 
 .tweak_name {
   font-size: 1.15em;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .tweak_desc {
@@ -99,12 +103,19 @@ a {
 
 .tweak_version {
   position: absolute;
-  top: 12px;
-  right: 12px;
-  padding: 12px;
+  top: 4pt;
+  right: 4pt;
+  padding: 4pt;
   font-size: 0.7em;
   background-color: #00000060;
-  border-radius: 12px;
+  border-radius: 4pt;
+}
+
+#close_btn {
+  position: absolute;
+  top: 8pt;
+  right: 8pt;
+  font-size: 32pt;
 }
 
 /* Tweak overlay */
@@ -116,30 +127,31 @@ a {
   width: 100vw;
   height: 100vh;
   background-color: #1d1d1d;
-  border-radius: 32pt;
+  border-radius: 16pt;
   transition: all 0.3s;
   overflow-x: hidden;
   overflow-y: scroll;
+  font-weight: 400;
 }
 
 #tweak_header {
   display: table;
-  margin: 24pt;
+  margin: 12pt;
   margin-bottom: 0;
 }
 
 #tweak_icon {
-  height: 180pt;
+  height: 35vmin;
   display: table-cell;
   border-radius: 20%;
-  border: 3pt solid gray;
+  border: 2pt solid gray;
 }
 
-#tweak_name {
+#tweak_name_container {
   font-size: 2em;
-  font-weight: 600;
-  padding-left: 24pt;
-  height: 180pt;
+  font-weight: 500;
+  padding-left: 12pt;
+  height: 35vmin;
   display: table-cell;
   vertical-align: middle;
 }
@@ -151,10 +163,9 @@ a {
 
 #tweak_get {
   font-size: 0.6em;
-  font-weight: 600;
-  width: 100pt;
-  border-radius: 50pt;
-  padding: 12pt;
+  font-weight: 500;
+  border-radius: 16pt;
+  padding: 4pt 16pt;
   background-color: rgb(53, 124, 255);
   text-align: center;
   color: white;
@@ -163,51 +174,50 @@ a {
 
 #tweak_get.red {
   background-color: indianred !important;
-  width: 200pt;
 }
 
 #tweak_miscs {
   display: flex;
   justify-content: center;
-  margin-top: 12pt;
-  margin-left: 24pt;
+  margin-top: 16pt;
   width: 100%;
 }
 
 .tweak_misc {
   font-weight: 500;
-  margin: 0 12pt;
-  padding: 12pt;
+  margin: 0 8pt;
+  padding: 8pt;
   background-color: #00000060;
-  border-radius: 12pt;
+  border-radius: 8pt;
 }
 
 .tweak_heading {
-  margin-left: 24pt;
-  margin-top: 24pt;
-  margin-bottom: 24pt;
+  margin-left: 12pt;
+  margin-top: 12pt;
+  margin-bottom: 12pt;
   font-size: 1.5em;
-  font-weight: 600;
+  font-weight: 500;
 }
 
-.tweak_desc {
-  margin-left: 24pt;
-  margin-right: 24pt;
-  font-family: Arial, Helvetica, sans-serif;
+.tweak_para {
+  margin-left: 12pt;
+  margin-right: 12pt;
 }
 
 #tweak_screens {
   display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  width: calc(4 * (50vmin + 24pt));
   height: 50vmax;
-  margin-left: 12pt;
+  padding-left: 8pt;
   overflow-x: auto;
+  overflow-y: hidden;
 }
 
 .tweak_screen {
-  width: calc(50vmax * 0.462);
   height: 50vmax;
-  margin-right: 24pt;
+  margin-left: 8pt;
+  margin-right: 8pt;
+}
+
+#tweak_demo {
+  min-width: calc(50vmax * 0.462);
 }
