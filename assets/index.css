@@ -12,7 +12,7 @@ html {
 
 body {
   background: black;
-  font-size: 1em;
+  font-size: 4.3vmin;
   font-weight: 400;
   color: white;
   height: 100%;
@@ -35,14 +35,15 @@ a {
 }
 
 #title {
-  font-size: 1.3em;
+  font-size: 2em;
   font-weight: 500;
 }
 
 /* Div blocks */
 
 .card {
-  background-color: #1d1d1d;
+  background-color: #101010;
+  font-size: 1.3em;
   padding: 8pt;
   margin: 8pt 4pt;
   border-radius: 12pt;
@@ -50,7 +51,7 @@ a {
 }
 
 .tweak_card {
-  background-color: #1d1d1d;
+  background-color: #101010;
   padding: 8pt;
   margin: 0 4pt;
   margin-bottom: 24pt;
@@ -126,7 +127,7 @@ a {
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-color: #1d1d1d;
+  background-color: #101010;
   border-radius: 16pt;
   transition: all 0.3s;
   overflow-x: hidden;

@@ -33,7 +33,7 @@ else if (navigator.appVersion.indexOf('Macintosh') != -1 && 'ontouchend' in docu
   throw "JS Exec Killed!";
 }
 // Fill 0 if needed.
-if (iOSVersion.length == 2) {
+if (iOSVersion && iOSVersion.length == 2) {
   iOSVersion.push(0);
 }
 
@@ -172,6 +172,7 @@ function addTweak(tweak) {
     mainElements.tweakOverlayCard.classList.remove("hidden");
     mainElements.main.classList.add("modal_shown");
   };
+  console.log('appending child');
   mainElements.tweaksDiv.appendChild(newTweakDiv);
 }
 
