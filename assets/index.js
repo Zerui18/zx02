@@ -121,7 +121,7 @@ function setOverlayDisplaying(tweak) {
   // Then add the actual screenshots.
   for (let i = 0; i < details.nScreenshots; i++) {
     const img = document.createElement("img");
-    img.src = `./assets/screenshots/${tweak.id}-${i}.png`;
+    img.src = `./assets/screenshots/${tweak.id}/${i}.png`;
     img.classList.add("tweak_screen");
     screensElement.appendChild(img);
   }

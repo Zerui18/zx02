@@ -2,7 +2,7 @@ const TWEAKS = [
   {
     name : "Frame",
     description : "Bring your iDevice to life with your favourite video wallpapers!",
-    version : "2.0.0",
+    version : "2.1.0",
     id : "frame",
     details : {
       subtitle : "Feature-complete Video Wallpaper",
@@ -17,7 +17,7 @@ const TWEAKS = [
         }
       ],
       miscs : [
-        "V2.0.0", "iOS 11-13"
+        "V2.1.0", "iOS 11-13"
       ],
       embedVideoURL : "https://streamable.com/s/djfvt/nustqr",
       nScreenshots : 3,

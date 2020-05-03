@@ -39,10 +39,15 @@ a {
   font-weight: 500;
 }
 
+.subtitle {
+  font-size: 1.5em;
+  color: rgb(0, 0, 0);
+}
+
 /* Div blocks */
 
 .card {
-  background-color: #101010;
+  background-color: #fff;
   font-size: 1.3em;
   padding: 8pt;
   margin: 8pt 4pt;
@@ -80,11 +85,6 @@ a {
 }
 
 /* Highlights */
-
-.keyword {
-  color: rgb(53, 124, 255);
-  display: inline;
-}
 
 .path {
   color: #777777;
