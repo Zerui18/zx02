@@ -80,7 +80,7 @@ function setOverlayDisplaying(tweak) {
     const minOSVersion = details.packages[i].minOSVersion;
     if (comparedToCurrentVersion(minOSVersion) == -1) {
       const id = details.packages[i].id;
-      modalElements.tweakGet.href = `cydia://url/https://cydia.saurik.com/api/share#?source=https://zerui18.github.io/ZX02/&package=${id}`;
+      modalElements.tweakGet.href = `cydia://url/https://cydia.saurik.com/api/share#?source=https://zerui18.github.io/zx02/&package=${id}`;
       modalElements.tweakGet.classList.remove("red");
       modalElements.tweakGet.textContent = "Get";
       break;
