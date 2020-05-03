@@ -27,7 +27,7 @@
       <div class="break"></div>
   
       <div class="subtitle card">Add Repo</div>
-      <div class="chunk">Add my repo <a target="_blank" href="cydia://url/https://cydia.saurik.com/api/share#?source=https://zerui18.github.io/ZX02"><b>HERE</b></a>.</div>
+      <div class="chunk">Add my repo <a target="_blank" href="cydia://url/https://cydia.saurik.com/api/share#?source=https://zerui18.github.io/zx02"><b>HERE</b></a>.</div>
       
       <div class="break"></div>
   
@@ -45,7 +45,7 @@
 
     <!-- Modal for tweak details, mostly placeholders -->
 
-    <div id="tweak_overlay_card" class="hidden">
+    <div id="tweak_overlay_card" class="overlay_card hidden">
       <div id="tweak_header">
 
         <img id="tweak_icon"/>
@@ -57,11 +57,11 @@
 
       </div>
 
-      <div id="close_btn" class="material-icons">close</div>
+      <div id="close_btn" class="material-icons close_btn">close</div>
 
       <div id="tweak_miscs"></div>
 
-      <div class="tweak_heading">Screenshots</div>
+      <div class="subtitle card tweak_heading">Screenshots</div>
       <div style="overflow-x: scroll">
         <div id="tweak_screens">
         </div>
@@ -72,8 +72,21 @@
       
       <div class="break_large"></div>
     </div>
+
+    <div id="help_overlay_card" class="overlay_card hidden">
+
+      <div id="help_close_btn" class="material-icons close_btn">close</div>
+
+      <div id="help_title"></div>
+
+      <div id="help_subtitle"></div>
+
+      <div id="help_content"></div>
+
+    </div>
       
     <script src="./assets/tweaks.js"></script>
+    <script src="./assets/help.js"></script>
     <script src="./assets/index.js"></script>
 
   </body>

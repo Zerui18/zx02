@@ -41,6 +41,7 @@ a {
 
 .subtitle {
   font-size: 1.5em;
+  font-weight: 500;
   color: rgb(0, 0, 0);
 }
 
@@ -112,16 +113,16 @@ a {
   border-radius: 4pt;
 }
 
-#close_btn {
+.close_btn {
   position: absolute;
-  top: 8pt;
+  top: 16pt;
   right: 8pt;
-  font-size: 32pt;
+  font-size: 32pt !important;
 }
 
 /* Tweak overlay */
 
-#tweak_overlay_card {
+.overlay_card {
   position: fixed;
   top: 0;
   left: 0;
@@ -194,10 +195,9 @@ a {
 
 .tweak_heading {
   margin-left: 12pt;
+  margin-right: 12pt;
   margin-top: 12pt;
   margin-bottom: 12pt;
-  font-size: 1.5em;
-  font-weight: 500;
 }
 
 .tweak_para {
@@ -221,4 +221,25 @@ a {
 
 #tweak_demo {
   min-width: calc(50vmax * 0.462);
+}
+
+#help_title {
+  margin: 12pt 12pt 0;
+  font-size: 2em;
+  font-weight: 500;
+}
+
+#help_subtitle {
+  margin: 0 12pt;
+  font-size: 1.33em;
+  font-weight: 400;
+}
+
+#help_content {
+  margin: 12pt;
+  font-weight: 200;
+}
+
+#help_content img {
+  width: 100%;
 }

@@ -2,7 +2,8 @@
 const mainElements = {
   main : document.getElementById("main"),
   tweaksDiv : document.getElementById("tweaks"),
-  tweakOverlayCard : document.getElementById("tweak_overlay_card")
+  tweakOverlayCard : document.getElementById("tweak_overlay_card"),
+  helpOverlayCard : document.getElementById("help_overlay_card")
 };
 
 const modalElements = {
@@ -13,7 +14,11 @@ const modalElements = {
   tweakGet : document.getElementById("tweak_get"),
   tweakMiscs : document.getElementById("tweak_miscs"),
   tweakScreens : document.getElementById("tweak_screens"),
-  tweakDescriptions : document.getElementById("tweak_descriptions")
+  tweakDescriptions : document.getElementById("tweak_descriptions"),
+  helpCloseButton : document.getElementById("help_close_btn"),
+  helpTitle : document.getElementById("help_title"),
+  helpSubtitle : document.getElementById("help_subtitle"),
+  helpContent : document.getElementById("help_content")
 }
 
 let iOSVersion;
@@ -65,7 +70,7 @@ var removeChildren = function (node) {
 };
 
 // Update the contents of the overlay with the given tweak info.
-function setOverlayDisplaying(tweak) {
+function setupTweakOverlay(tweak) {
   const details = tweak.details;
   modalElements.tweakIcon.src = `./assets/icons/${tweak.id}.png`;
   modalElements.tweakName.textContent = tweak.name;
@@ -139,6 +144,8 @@ function setOverlayDisplaying(tweak) {
     // Add heading
     const headingElement = document.createElement("div");
     headingElement.classList.add("tweak_heading");
+    headingElement.classList.add("subtitle");
+    headingElement.classList.add("card");
     headingElement.textContent = description.title;
     descriptionsElement.appendChild(headingElement)
 
@@ -147,6 +154,25 @@ function setOverlayDisplaying(tweak) {
     descriptionElement.classList.add("tweak_para");
     descriptionElement.innerHTML = description.html;
     descriptionsElement.appendChild(descriptionElement);
+  });
+}
+
+function setupHelpOverlay(help) {
+  modalElements.helpTitle.textContent = help.title;
+  modalElements.helpSubtitle.textContent = help.subtitle;
+  help.content.forEach(paragraph => {
+    let element;
+    if (paragraph.startsWith("!")) {
+      // Add image
+      element = document.createElement("img");
+      element.src = paragraph.slice(1);
+    }
+    else {
+      // Add paragraph
+      element = document.createElement("p");
+      element.innerHTML = paragraph;
+    }
+    modalElements.helpContent.appendChild(element);
   });
 }
 
@@ -167,12 +193,11 @@ function addTweak(tweak) {
   newTweakDiv.innerHTML = contents;
   newTweakDiv.onclick = () => {
     // Update overlay to display the selected tweak.
-    setOverlayDisplaying(tweak);
+    setupTweakOverlay(tweak);
     // Show overlay.
     mainElements.tweakOverlayCard.classList.remove("hidden");
     mainElements.main.classList.add("modal_shown");
   };
-  console.log('appending child');
   mainElements.tweaksDiv.appendChild(newTweakDiv);
 }
 
@@ -184,3 +209,24 @@ modalElements.closeButton.onclick = () => {
   mainElements.tweakOverlayCard.classList.add("hidden");
   mainElements.main.classList.remove("modal_shown");
 };
+
+// Parse hash.
+const hashParts = window.location.hash.slice(1).split("=");
+if (hashParts.length == 2) {
+  const key = hashParts[0];
+  if (key == "err") {
+    const [tweak, errCode] = hashParts[1].split(".");
+    setupHelpOverlay(HELP[tweak][errCode]);
+    mainElements.helpOverlayCard.classList.remove("hidden");
+    mainElements.main.classList.add("modal_shown");
+  }
+}
+
+// Configure overlay.
+modalElements.helpCloseButton.onclick = () => {
+  mainElements.helpOverlayCard.classList.add("hidden");
+  mainElements.main.classList.remove("modal_shown");
+};
+
+// Remove hash.
+history.pushState("", document.title, window.location.pathname + window.location.search);

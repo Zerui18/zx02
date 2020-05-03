@@ -17,7 +17,7 @@ const TWEAKS = [
         }
       ],
       miscs : [
-        "V2.1.0", "iOS 11-13"
+        "v2.1.0", "iOS 11-13"
       ],
       embedVideoURL : "https://streamable.com/s/djfvt/nustqr",
       nScreenshots : 3,
@@ -38,9 +38,13 @@ const TWEAKS = [
           html : "1. Setting <b>different</b> video wallpapers for the lock screen and home screen, each with a separate mute control. <br><br>\
           2. Built-in video wallpaper <b>catalogue</b> that offers hundreds of HQ vertical video wallpapers at your fingertip. <br><br>\
           3. Intelligent <b>playback management</b> that only plays the video when you're seeing it, thus conserving battery. <br><br>\
-          4. Automatically <b>fade</b> your icons and status bar after a configurable period of inactivity. \
-          5. Alternative CLI <div class=\"code keyword\">framecli</div> for those who would like to use Frame with automated scripts. <br><br>\
-          6. Automatic <b>Low Power Mode</b> integration that deactivates Frame when LPM is on and reactivates it when LPM is off. <br>"
+          4. Automatically <b>fade</b> your icons and status bar after a configurable period of inactivity. <br><br>\
+          5. Alternative CLI <b>framecli</b> for those who would like to use Frame with automated scripts. <br><br>\
+          6. Automatic <b>Low Power Mode</b> integration that deactivates Frame when LPM is on and reactivates it when LPM is off."
+        },
+        {
+          title : "Tips",
+          html : "1. If you would like to set the same video for both home and lock screen, try setting the same system wallpaper to both screens. It will give the effect where the wallpaper does not get lifted with the lock screen."
         }
       ]
     }
