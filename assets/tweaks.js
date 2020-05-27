@@ -2,7 +2,7 @@ const TWEAKS = [
   {
     name : "Frame",
     description : "Bring your iDevice to life with your favourite video wallpapers!",
-    version : "2.2.0",
+    version : "2.3.0",
     id : "frame",
     details : {
       subtitle : "Feature-complete Video Wallpaper",
@@ -17,10 +17,10 @@ const TWEAKS = [
         }
       ],
       miscs : [
-        "v2.2.0", "iOS 11-13"
+        "v2.3.0", "iOS 11-13"
       ],
       embedVideoURL : "https://streamable.com/s/djfvt/nustqr",
-      nScreenshots : 3,
+      nScreenshots : 5,
       descriptions : [
         {
           title : "Description",
@@ -44,7 +44,8 @@ const TWEAKS = [
         },
         {
           title : "Tips",
-          html : "1. If you would like to set the same video for both home and lock screen, try setting the same system wallpaper to both screens. It will give the effect where the wallpaper does not get lifted with the lock screen."
+          html : "1. If you would like to set the same video for both home and lock screen, try setting the same system wallpaper to both screens. It will give the effect where the wallpaper does not get lifted with the lock screen. <br><br>\
+          2. The downloaded video(s) & current video(s) can be found under <b>/var/mobile/Documents/com.ZX02.Frame</b> ."
         }
       ]
     }
