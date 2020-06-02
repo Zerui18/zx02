@@ -1,30 +1,30 @@
 Package: com.zx02.frame
-Version: 2.3.0
+Version: 2.3.1
 Architecture: iphoneos-arm
 Maintainer: Zerui Chen
-Installed-Size: 7240
+Installed-Size: 7380
 Depends: mobilesubstrate,preferenceloader,firmware (>= 12.1.9)
-Filename: ./debs/com.zx02.frame_2.3.0_iphoneos-arm.deb
-Size: 1421722
-MD5sum: 6cc62a12021576fa77725e705a9cd202
-SHA1: 1a97e3f03d95eba3eb41739332e79699f5c82162
-SHA256: 13d53b1a94b2350c10787f3267adee6acd673c4bc0ea174e223c3bdc9b74baef
+Filename: ./debs/com.zx02.frame_2.3.1_iphoneos-arm.deb
+Size: 1455488
+MD5sum: 21f451ae3d32ecbb05ec7cf31d840b64
+SHA1: 8731b55f57a6af0781d4fee49b076cfbe8ad5bc8
+SHA256: 6429f3659908aeab1ba40900c94b05aa72595a787f511e79f18c609e530ecfcc
 Section: Wallpaper
 Description: Bring your iDevice to life with true video wallpapers.
 Author: Zerui Chen
 Name: Frame
 
 Package: com.zx02.frame.legacy
-Version: 2.3.0
+Version: 2.3.1
 Architecture: iphoneos-arm
 Maintainer: Zerui Chen
-Installed-Size: 7240
+Installed-Size: 7380
 Depends: org.swift.libswift (>= 5.0), mobilesubstrate,preferenceloader,firmware (>= 11.0),firmware (<= 12.1.9)
-Filename: ./debs/com.zx02.frame.legacy_2.3.0_iphoneos-arm.deb
-Size: 1421972
-MD5sum: e88f6e6fde05cf70bf1196d763d3c42c
-SHA1: 001823c4989c506587f764ac994097c3dd7e3adb
-SHA256: 8ad538ac957212649d472ccc4b692b78a497a1c01e1230b429fe594bdfae69fe
+Filename: ./debs/com.zx02.frame.legacy_2.3.1_iphoneos-arm.deb
+Size: 1456272
+MD5sum: eb6f4d5208609bcbed3c436607219113
+SHA1: 4e5cbd1d83bb08e780b82fade2a62d832d76cd33
+SHA256: 3b2118738dc272ba226d81039d57458815c92f20445ac65902ecf3e052d32345
 Section: Wallpaper
 Description: (For iOS < 12.2) Bring your iDevice to life with true video wallpapers.
 Author: Zerui Chen
