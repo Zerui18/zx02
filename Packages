@@ -4,11 +4,27 @@ Architecture: iphoneos-arm
 Maintainer: Zerui Chen
 Installed-Size: 7380
 Depends: mobilesubstrate,preferenceloader,firmware (>= 12.1.9)
-Filename: ./debs/com.zx02.frame_2.3.1_iphoneos-arm.deb
+Filename: ./debs/Archive/com.zx02.frame_2.3.1_iphoneos-arm.deb
 Size: 1455488
 MD5sum: 21f451ae3d32ecbb05ec7cf31d840b64
 SHA1: 8731b55f57a6af0781d4fee49b076cfbe8ad5bc8
 SHA256: 6429f3659908aeab1ba40900c94b05aa72595a787f511e79f18c609e530ecfcc
+Section: Wallpaper
+Description: Bring your iDevice to life with true video wallpapers.
+Author: Zerui Chen
+Name: Frame
+
+Package: com.zx02.frame
+Version: 2.4.0
+Architecture: iphoneos-arm
+Maintainer: Zerui Chen
+Installed-Size: 188
+Depends: mobilesubstrate,preferenceloader,firmware (>= 12.1.9)
+Filename: ./debs/com.zx02.frame_2.4.0_iphoneos-arm.deb
+Size: 39424
+MD5sum: fc58bf719aecf4836fabf8d98c7cb604
+SHA1: 2e2d43f0d579ed23b9f8cf26f77e193f831093e1
+SHA256: 0a5a6848167f9bf3691c3a7e9da4d6ae0a0a23535877ed15491c54bf8032b006
 Section: Wallpaper
 Description: Bring your iDevice to life with true video wallpapers.
 Author: Zerui Chen
@@ -20,11 +36,27 @@ Architecture: iphoneos-arm
 Maintainer: Zerui Chen
 Installed-Size: 7380
 Depends: org.swift.libswift (>= 5.0), mobilesubstrate,preferenceloader,firmware (>= 11.0),firmware (<= 12.1.9)
-Filename: ./debs/com.zx02.frame.legacy_2.3.1_iphoneos-arm.deb
+Filename: ./debs/Archive/com.zx02.frame.legacy_2.3.1_iphoneos-arm.deb
 Size: 1456272
 MD5sum: eb6f4d5208609bcbed3c436607219113
 SHA1: 4e5cbd1d83bb08e780b82fade2a62d832d76cd33
 SHA256: 3b2118738dc272ba226d81039d57458815c92f20445ac65902ecf3e052d32345
+Section: Wallpaper
+Description: (For iOS < 12.2) Bring your iDevice to life with true video wallpapers.
+Author: Zerui Chen
+Name: Frame (Legacy)
+
+Package: com.zx02.frame.legacy
+Version: 2.4.0
+Architecture: iphoneos-arm
+Maintainer: Zerui Chen
+Installed-Size: 7380
+Depends: org.swift.libswift (>= 5.0), mobilesubstrate,preferenceloader,firmware (>= 11.0),firmware (<= 12.1.9)
+Filename: ./debs/com.zx02.frame.legacy_2.4.0_iphoneos-arm.deb
+Size: 1078628
+MD5sum: 12efb6f1f2e36b3820884fb7a1f14180
+SHA1: aaa270ad18c0ad9b568236078014f86fbc4a9f75
+SHA256: 45b0ebf3afd9f0b5a3f220849c887f1b6c73c3dbe565fbb6f7ba8b8f133845ca
 Section: Wallpaper
 Description: (For iOS < 12.2) Bring your iDevice to life with true video wallpapers.
 Author: Zerui Chen
