@@ -2,7 +2,7 @@ const TWEAKS = [
   {
     name : "Frame",
     description : "Bring your iDevice to life with your favourite video wallpapers!",
-    version : "2.4.1",
+    version : "2.4.2",
     id : "frame",
     details : {
       subtitle : "Feature-complete Video Wallpaper",
@@ -28,8 +28,8 @@ const TWEAKS = [
       descriptions : [
         {
           title : "Importatant",
-          html : "If your iOS 14 device runs arm64e (A12 or later), please use the Frame (arm64e-iOS14), otherwise devices including and above iOS 12.2 should \
-          use the Frame package, while devices from iOS 11 to below iOS 12.2 should use the Frame (Legacy) package."
+          html : "If your iOS 14 device runs arm64e (A12 or later), please use the Frame (arm64e-iOS14) package, otherwise devices on iOS 12.2 or above should \
+          use the Frame package, while devices from iOS 11 and below iOS 12.2 should use the Frame (Legacy) package."
         },
         {
           title : "Description",
