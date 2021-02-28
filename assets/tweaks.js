@@ -8,6 +8,10 @@ const TWEAKS = [
       subtitle : "Feature-complete Video Wallpaper",
       packages : [
         {
+          minOSVersion : [14, 0, 0],
+          id : "com.zx02.frame.ios14"
+        },
+        {
           minOSVersion : [12, 2, 0],
           id : "com.zx02.frame"
         },
@@ -22,6 +26,11 @@ const TWEAKS = [
       embedVideoURL : "https://streamable.com/s/djfvt/nustqr",
       nScreenshots : 5,
       descriptions : [
+        {
+          title : "Importatant",
+          html : "If your iOS 14 device runs arm64e (A12 or later), please use the Frame (arm64e-iOS14), otherwise devices including and above iOS 12.2 should \
+          use the Frame package, while devices from iOS 11 to below iOS 12.2 should use the Frame (Legacy) package."
+        },
         {
           title : "Description",
           html : "Ever wanted to see your favourite character/landscape live on your wallpaper? <br><br>\
