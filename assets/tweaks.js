@@ -1,5 +1,31 @@
 const TWEAKS = [
   {
+    name : "XenLive",
+    description : "Live editing of XenHTML Widgets on your device from a PC.",
+    version : "1.0.0",
+    id : "xenlive",
+    details : {
+      subtitle : "Hot-reloading Widget Editor",
+      packages : [
+        {
+          minOSVersion : [12, 0, 0],
+          id : "com.zx02.xenlive"
+        }
+      ],
+      miscs : [
+        "v1.0.0", "iOS 12-14"
+      ],
+      embedVideoURL : "",
+      nScreenshots : 0,
+      descriptions : [
+        {
+          title : "Installation",
+          html : "Please install the xenlive tweak onto your iOS device, and the accompanying xenlive-edit extension on VSCode. More instructions on setting up the VSCode extension can be found on its page in VSCode extensions."
+        },
+      ]
+    }
+  },
+  {
     name : "Frame",
     description : "Bring your iDevice to life with your favourite video wallpapers!",
     version : "2.4.2",

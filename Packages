@@ -4,7 +4,7 @@ Architecture: iphoneos-arm
 Maintainer: Zerui Chen
 Installed-Size: 7380
 Depends: mobilesubstrate,preferenceloader,firmware (>= 12.1.9)
-Filename: ./debs/archive/com.zx02.frame_2.3.1_iphoneos-arm.deb
+Filename: ./debs/frame/archive/com.zx02.frame_2.3.1_iphoneos-arm.deb
 Size: 1455488
 MD5sum: 21f451ae3d32ecbb05ec7cf31d840b64
 SHA1: 8731b55f57a6af0781d4fee49b076cfbe8ad5bc8
@@ -20,7 +20,7 @@ Architecture: iphoneos-arm
 Maintainer: Zerui Chen
 Installed-Size: 8516
 Depends: mobilesubstrate,preferenceloader,firmware (>= 12.1.9)
-Filename: ./debs/com.zx02.frame_2.4.2_iphoneos-arm.deb
+Filename: ./debs/frame/com.zx02.frame_2.4.2_iphoneos-arm.deb
 Size: 1740536
 MD5sum: d102a41d5fa804f009b6218e359943f9
 SHA1: 67105b6ab689d82ee6ad5a5686cc92339fd31f86
@@ -36,7 +36,7 @@ Architecture: iphoneos-arm
 Maintainer: Zerui Chen
 Installed-Size: 8332
 Depends: mobilesubstrate,preferenceloader,firmware (>= 14.0.0)
-Filename: ./debs/com.zx02.frame.ios14_2.4.2_iphoneos-arm.deb
+Filename: ./debs/frame/com.zx02.frame.ios14_2.4.2_iphoneos-arm.deb
 Size: 1702580
 MD5sum: a5cf30e5a6903df647671a7c3946cc59
 SHA1: 19659b88f049f8280af435fad7e76b086194d5e0
@@ -52,7 +52,7 @@ Architecture: iphoneos-arm
 Maintainer: Zerui Chen
 Installed-Size: 7380
 Depends: org.swift.libswift (>= 5.0), mobilesubstrate,preferenceloader,firmware (>= 11.0),firmware (<= 12.1.9)
-Filename: ./debs/archive/com.zx02.frame.legacy_2.3.1_iphoneos-arm.deb
+Filename: ./debs/frame/archive/com.zx02.frame.legacy_2.3.1_iphoneos-arm.deb
 Size: 1456272
 MD5sum: eb6f4d5208609bcbed3c436607219113
 SHA1: 4e5cbd1d83bb08e780b82fade2a62d832d76cd33
@@ -68,7 +68,7 @@ Architecture: iphoneos-arm
 Maintainer: Zerui Chen
 Installed-Size: 8504
 Depends: org.swift.libswift (>= 5.0), mobilesubstrate,preferenceloader,firmware (>= 11.0),firmware (<= 12.1.9)
-Filename: ./debs/com.zx02.frame.legacy_2.4.1_iphoneos-arm.deb
+Filename: ./debs/frame/com.zx02.frame.legacy_2.4.1_iphoneos-arm.deb
 Size: 1745618
 MD5sum: 9508f669ee9a2040cb78b3100c4a82b0
 SHA1: 82f45d9096db167feece115aecbf60415e1f253a
@@ -77,4 +77,20 @@ Section: Wallpaper
 Description: (For iOS < 12.2) Bring your iDevice to life with true video wallpapers.
 Author: Zerui Chen
 Name: Frame (Legacy)
+
+Package: com.zx02.xenlive
+Version: 1.0.0
+Architecture: iphoneos-arm
+Maintainer: Zerui Chen
+Installed-Size: 352
+Depends: mobilesubstrate (>= 0.9.5000), rsync (>=3.0.0), openssh
+Filename: ./debs/xenlive/com.zx02.xenlive_1.0.0_iphoneos-arm.deb
+Size: 44286
+MD5sum: a82926a9166efc24dd7651db3cb9e29d
+SHA1: 9cabf12ce392a38c16ef74444a6b35a0b5fbfe7a
+SHA256: 6a3ac5920bb5aeb435f02017bdfe3797ce5c36a710097f9fb3f17672ec77bc1f
+Section: Tweaks
+Description: Live editing of XenHTML Widgets on your device from a PC.
+Author: Zerui Chen
+Name: XenLive
 
