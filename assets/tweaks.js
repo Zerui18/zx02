@@ -2,7 +2,7 @@ const TWEAKS = [
   {
     name : "XenLive",
     description : "Live editing of XenHTML Widgets on your device from a PC.",
-    version : "1.0.0",
+    version : "1.1.0",
     id : "xenlive",
     details : {
       subtitle : "Hot-reloading Widget Editor",
@@ -13,7 +13,7 @@ const TWEAKS = [
         }
       ],
       miscs : [
-        "v1.0.0", "iOS 12-14"
+        "v1.1.0", "iOS 12-14"
       ],
       embedVideoURL : "",
       nScreenshots : 0,

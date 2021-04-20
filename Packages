@@ -84,11 +84,27 @@ Architecture: iphoneos-arm
 Maintainer: Zerui Chen
 Installed-Size: 352
 Depends: mobilesubstrate (>= 0.9.5000), rsync (>=3.0.0), openssh
-Filename: ./debs/xenlive/com.zx02.xenlive_1.0.0_iphoneos-arm.deb
+Filename: ./debs/xenlive/archive/com.zx02.xenlive_1.0.0_iphoneos-arm.deb
 Size: 44286
 MD5sum: a82926a9166efc24dd7651db3cb9e29d
 SHA1: 9cabf12ce392a38c16ef74444a6b35a0b5fbfe7a
 SHA256: 6a3ac5920bb5aeb435f02017bdfe3797ce5c36a710097f9fb3f17672ec77bc1f
+Section: Tweaks
+Description: Live editing of XenHTML Widgets on your device from a PC.
+Author: Zerui Chen
+Name: XenLive
+
+Package: com.zx02.xenlive
+Version: 1.1.0
+Architecture: iphoneos-arm
+Maintainer: Zerui Chen
+Installed-Size: 232
+Depends: mobilesubstrate (>= 0.9.5000)
+Filename: ./debs/xenlive/com.zx02.xenlive_1.1.0_iphoneos-arm.deb
+Size: 13188
+MD5sum: 60206ee4709211eb207ae3720596142d
+SHA1: b8e899cedb0a85ee9da8161fb70bb81e7fa3112d
+SHA256: 1ea364afb6a92a62697202b5fd26eeefd2ea912f310c9f40f37b740813b24885
 Section: Tweaks
 Description: Live editing of XenHTML Widgets on your device from a PC.
 Author: Zerui Chen
