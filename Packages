@@ -36,11 +36,27 @@ Architecture: iphoneos-arm
 Maintainer: Zerui Chen
 Installed-Size: 8536
 Depends: mobilesubstrate,preferenceloader,firmware (>= 12.1.9)
-Filename: ./debs/frame/com.zx02.frame_2.4.3_iphoneos-arm.deb
+Filename: ./debs/frame/archive/com.zx02.frame_2.4.3_iphoneos-arm.deb
 Size: 1742956
 MD5sum: 149693b8cdc4f0dc192296d9e5be2698
 SHA1: 66e69b757904b11dda7df15b23dc34d139c596cc
 SHA256: 2b19316c253ea5d78e9719aa4cfec342c04021ae0e26a9d86a6a79f51ea7a31e
+Section: Wallpaper
+Description: Bring your iDevice to life with true video wallpapers.
+Author: Zerui Chen
+Name: Frame
+
+Package: com.zx02.frame
+Version: 2.4.4
+Architecture: iphoneos-arm
+Maintainer: Zerui Chen
+Installed-Size: 8536
+Depends: mobilesubstrate,preferenceloader,firmware (>= 12.1.9)
+Filename: ./debs/frame/com.zx02.frame_2.4.4_iphoneos-arm.deb
+Size: 1743036
+MD5sum: a234437baa2b4bbd323c8bfe0e76121b
+SHA1: b0fdee67d664df59b4575e097aefab015f08400a
+SHA256: 7814ede6f333db63f0d6ca7c1f75399c5c1a5c15b5b60ab71a7572a9530f1964
 Section: Wallpaper
 Description: Bring your iDevice to life with true video wallpapers.
 Author: Zerui Chen
@@ -68,11 +84,27 @@ Architecture: iphoneos-arm
 Maintainer: Zerui Chen
 Installed-Size: 8480
 Depends: mobilesubstrate,preferenceloader,firmware (>= 13.9.9)
-Filename: ./debs/frame/com.zx02.frame.ios14_2.4.3_iphoneos-arm.deb
+Filename: ./debs/frame/archive/com.zx02.frame.ios14_2.4.3_iphoneos-arm.deb
 Size: 1705120
 MD5sum: 08698e71244dd94e88bae3e3a119fdc2
 SHA1: 2ee998e8661cfb5f0c9d6d205e65e3f2ccfc74bb
 SHA256: bed774d136d383974efecb8f3121d4d69461fb1df8491df604149ac78379b618
+Section: Wallpaper
+Description: Bring your iDevice to life with true video wallpapers.
+Author: Zerui Chen
+Name: Frame
+
+Package: com.zx02.frame.ios14
+Version: 2.4.4
+Architecture: iphoneos-arm
+Maintainer: Zerui Chen
+Installed-Size: 8480
+Depends: mobilesubstrate,preferenceloader,firmware (>= 13.9.9)
+Filename: ./debs/frame/com.zx02.frame.ios14_2.4.4_iphoneos-arm.deb
+Size: 1705610
+MD5sum: 867e7f82ceac745c12ef54a43d1a2285
+SHA1: 72a807d4ab3f1eb444ba547613a7cc2e619eeb9a
+SHA256: 2c542155f91f9fa8cba2b5d74fa2dd0936b5b3e7214e09e34883f56e077c0821
 Section: Wallpaper
 Description: Bring your iDevice to life with true video wallpapers.
 Author: Zerui Chen
