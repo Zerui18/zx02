@@ -142,6 +142,22 @@ Description: (For iOS < 12.2) Bring your iDevice to life with true video wallpap
 Author: Zerui Chen
 Name: Frame (Legacy)
 
+Package: com.zx02.relaunch
+Version: 0.0.1
+Architecture: iphoneos-arm
+Maintainer: Zerui Chen
+Installed-Size: 332
+Depends: mobilesubstrate (>= 0.9.5000)
+Filename: ./debs/relaunch/com.zx02.relaunch_0.0.1_iphoneos-arm.deb
+Size: 7246
+MD5sum: 9ff01b41a6244fcb90619c4f9618cf31
+SHA1: 3ac10d052f9a9861b22fb4ff94122a84b7b1ef5b
+SHA256: 21bb0ad56fada91494ab03546553140655f7237865acf9a8d0b6574b9dd7a93e
+Section: Utilities
+Description: Relaunch an application.
+Author: Zerui Chen
+Name: relaunch
+
 Package: com.zx02.xenlive
 Version: 1.0.0
 Architecture: iphoneos-arm
