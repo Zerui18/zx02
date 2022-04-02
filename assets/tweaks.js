@@ -28,35 +28,22 @@ const TWEAKS = [
   {
     name : "Frame",
     description : "Bring your iDevice to life with your favourite video wallpapers!",
-    version : "2.4.2",
+    version : "3.0.0",
     id : "frame",
     details : {
       subtitle : "Feature-complete Video Wallpaper",
       packages : [
         {
-          minOSVersion : [14, 0, 0],
-          id : "com.zx02.frame.ios14"
-        },
-        {
-          minOSVersion : [12, 2, 0],
+          minOSVersion : [13, 0, 0],
           id : "com.zx02.frame"
-        },
-        {
-          minOSVersion : [11, 0, 0],
-          id : "com.zx02.frame.legacy"
         }
       ],
       miscs : [
-        "v2.4.1", "iOS 11-14"
+        "v3.0.0", "iOS 13-14"
       ],
-      embedVideoURL : "https://streamable.com/s/djfvt/nustqr",
-      nScreenshots : 5,
+      embedVideoURL : "",
+      nScreenshots : 6,
       descriptions : [
-        {
-          title : "Importatant",
-          html : "If your iOS 14 device runs arm64e (A12 or later), please use the Frame (arm64e-iOS14) package, otherwise devices on iOS 12.2 or above should \
-          use the Frame package, while devices from iOS 11 and below iOS 12.2 should use the Frame (Legacy) package."
-        },
         {
           title : "Description",
           html : "Ever wanted to see your favourite character/landscape live on your wallpaper? <br><br>\
@@ -64,8 +51,8 @@ const TWEAKS = [
         },
         {
           title : "Setup",
-          html : "1. Install <br><br>\
-          2. Settings > Frame > Choose Wallpapers <br><br>\
+          html : "1. Install the package <br><br>\
+          2. Open the Frame app on Homescreen > Download Video > Choose Video <br><br>\
           3. Enjoy! <br>"
         },
         {
@@ -80,7 +67,7 @@ const TWEAKS = [
         {
           title : "Tips",
           html : "1. If you would like to set the same video for both home and lock screen, try setting the same system wallpaper to both screens. It will give the effect where the wallpaper does not get lifted with the lock screen. <br><br>\
-          2. The downloaded video(s) & current video(s) can be found under <b>/var/mobile/Documents/com.ZX02.Frame</b> ."
+          2. The downloaded video(s) & current video(s) can be found under <b>/var/mobile/Documents/com.zx02/frame/videos/</b> ."
         }
       ]
     }
