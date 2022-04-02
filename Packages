@@ -78,54 +78,6 @@ Description: Bring your iDevice to life with true video wallpapers.
 Author: Zerui Chen
 Name: Frame
 
-Package: com.zx02.frame.ios14
-Version: 2.4.2
-Architecture: iphoneos-arm
-Maintainer: Zerui Chen
-Installed-Size: 8332
-Depends: mobilesubstrate,preferenceloader,firmware (>= 14.0.0)
-Filename: ./debs/frame/archive/com.zx02.frame.ios14_2.4.2_iphoneos-arm.deb
-Size: 1702580
-MD5sum: a5cf30e5a6903df647671a7c3946cc59
-SHA1: 19659b88f049f8280af435fad7e76b086194d5e0
-SHA256: 9ade4f49da508fe9c75ee6fef3665f1baf55d7c0513413a732332ea91cec4b7c
-Section: Wallpaper
-Description: Bring your iDevice to life with true video wallpapers.
-Author: Zerui Chen
-Name: Frame (arm64e-iOS14)
-
-Package: com.zx02.frame.ios14
-Version: 2.4.3
-Architecture: iphoneos-arm
-Maintainer: Zerui Chen
-Installed-Size: 8480
-Depends: mobilesubstrate,preferenceloader,firmware (>= 13.9.9)
-Filename: ./debs/frame/archive/com.zx02.frame.ios14_2.4.3_iphoneos-arm.deb
-Size: 1705120
-MD5sum: 08698e71244dd94e88bae3e3a119fdc2
-SHA1: 2ee998e8661cfb5f0c9d6d205e65e3f2ccfc74bb
-SHA256: bed774d136d383974efecb8f3121d4d69461fb1df8491df604149ac78379b618
-Section: Wallpaper
-Description: Bring your iDevice to life with true video wallpapers.
-Author: Zerui Chen
-Name: Frame
-
-Package: com.zx02.frame.ios14
-Version: 2.4.4
-Architecture: iphoneos-arm
-Maintainer: Zerui Chen
-Installed-Size: 8480
-Depends: mobilesubstrate,preferenceloader,firmware (>= 13.9.9)
-Filename: ./debs/frame/archive/com.zx02.frame.ios14_2.4.4_iphoneos-arm.deb
-Size: 1705610
-MD5sum: 867e7f82ceac745c12ef54a43d1a2285
-SHA1: 72a807d4ab3f1eb444ba547613a7cc2e619eeb9a
-SHA256: 2c542155f91f9fa8cba2b5d74fa2dd0936b5b3e7214e09e34883f56e077c0821
-Section: Wallpaper
-Description: Bring your iDevice to life with true video wallpapers.
-Author: Zerui Chen
-Name: Frame
-
 Package: com.zx02.frame.legacy
 Version: 2.3.1
 Architecture: iphoneos-arm
