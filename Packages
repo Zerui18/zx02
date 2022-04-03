@@ -63,16 +63,16 @@ Author: Zerui Chen
 Name: Frame
 
 Package: com.zx02.frame
-Version: 3.0.0
+Version: 3.0.0-1
 Architecture: iphoneos-arm
 Maintainer: Zerui Chen
-Installed-Size: 15832
+Installed-Size: 15808
 Depends: mobilesubstrate,firmware (>= 12.9.9)
-Filename: ./debs/frame/com.zx02.frame_3.0.0_iphoneos-arm.deb
-Size: 2664260
-MD5sum: 3dc79b00928f9723947ff18a9f6f0fde
-SHA1: 545e31ab075671719099dc35a59beeb2538ea446
-SHA256: 33ac1bd3e7e9bfd2dd84048d89d7b7606dd415865f95040848959891fba82b22
+Filename: ./debs/frame/com.zx02.frame_3.0.0-1_iphoneos-arm.deb
+Size: 2659168
+MD5sum: 0f4994894866dd2dbed18a3912aa3868
+SHA1: 2e4624921d69e545f1bff5772a65d4af1e913687
+SHA256: ff8a4ae63ba7ca23941e3739ee4812da6a150a0f5ab859554acf066d0e1df055
 Section: Tweaks
 Description: Bring your iDevice to life with true video wallpapers.
 Author: Zerui Chen
