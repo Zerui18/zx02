@@ -83,30 +83,30 @@ Version: 3.0.1
 Architecture: iphoneos-arm
 Maintainer: Zerui Chen
 Installed-Size: 4284
-Depends: mobilesubstrate,firmware (>= 12.9.9),firmware (<=13.7.9)
-Conflicts: com.zx02.frame.rootless com.zx02.frame.ios14
+Depends: mobilesubstrate,firmware (>= 12.9.9),firmware (<= 13.7.9)
+Conflicts: com.zx02.frame.rootless,com.zx02.frame.ios14
 Filename: ./debs/frame/com.zx02.frame.ios13_3.0.1_iphoneos-arm.deb
-Size: 2341002
-MD5sum: e6e3cb0794f590320dfc1c2745618aa7
-SHA1: 2b08ac0ee4cfee56fbdc3e3d234a940c97f2a01e
-SHA256: abd9cf4b55129dbf3d6c068c77ae3fb4f62ad885f5f18cc7ea565786c4fba008
+Size: 2342066
+MD5sum: aaa772a5bedb3c3d5dd308eda9a6333f
+SHA1: 1cfc3dd6a0a30980a4eba7d21bc062c89ead2729
+SHA256: 86887df2faf766e13f3e96b760a4e7ff653ae095deb6693a45de5cc28c5d437a
 Section: Tweaks
 Description: Bring your iDevice to life with true video wallpapers.
 Author: Zerui Chen
-Name: Frame (Rootfull iOS13.0-13.7)
+Name: Frame (Rootfull iOS 13.0-13.7)
 
 Package: com.zx02.frame.ios14
 Version: 3.0.1
-Architecture: iphoneos-arm64
+Architecture: iphoneos-arm
 Maintainer: Zerui Chen
 Installed-Size: 4284
-Depends: mobilesubstrate,firmware (>= 13.7.0)
-Conflicts: com.zx02.frame.ios13 com.zx02.frame.rootless
-Filename: ./debs/frame/com.zx02.frame.ios14_3.0.1_iphoneos-arm64.deb
-Size: 2340174
-MD5sum: 3fad7a6aca8d95988f07730861adb710
-SHA1: 1970de258605eb135c04f53b7bf8a002fb0869fd
-SHA256: 80f21b219743e260bde9e8ee8306dcd4340fb8e0862e787e8af222e75d8d2cba
+Depends: mobilesubstrate,firmware (>= 13.7.9)
+Conflicts: com.zx02.frame.rootless,com.zx02.frame.ios13
+Filename: ./debs/frame/com.zx02.frame.ios14_3.0.1_iphoneos-arm.deb
+Size: 2341304
+MD5sum: d92e9d4c49d994640f7c067fe1199287
+SHA1: 91fbdc7e72d9ee4507fa4ea0e977281bf5414483
+SHA256: 6f87d0c0aff08f1ab82e49566df3d2813243e08b8fa0c7d0c436c675fc9f8e9c
 Section: Tweaks
 Description: Bring your iDevice to life with true video wallpapers.
 Author: Zerui Chen
@@ -150,12 +150,12 @@ Architecture: iphoneos-arm64
 Maintainer: Zerui Chen
 Installed-Size: 4284
 Depends: mobilesubstrate,firmware (>= 13.9.9)
-Conflicts: com.zx02.frame.ios13 com.zx02.frame.ios14
+Conflicts: com.zx02.frame.ios13,com.zx02.frame.ios14
 Filename: ./debs/frame/com.zx02.frame.rootless_3.0.1_iphoneos-arm64.deb
-Size: 2338536
-MD5sum: e4e6a8187b59d5d72a9a2ffd3b23a2c5
-SHA1: 7a6f4350f7b629eeec8bf599268407189bf27bc7
-SHA256: 570070e0469fcd38ca74e40b4119c2bd155a6fbba173491e446bb14581a094e8
+Size: 2338512
+MD5sum: 194929cc7b9f517e02243bc08c982c2f
+SHA1: 61d53417742a6d7c62868cf207f10a0771254265
+SHA256: ac667f23e41af57d2d69a2cc2efec592deaf4773aa0c6fb3c146fcebdbc795b2
 Section: Tweaks
 Description: Bring your iDevice to life with true video wallpapers.
 Author: Zerui Chen
