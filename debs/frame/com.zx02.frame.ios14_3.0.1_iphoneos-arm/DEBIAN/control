@@ -1,0 +1,11 @@
+Package: com.zx02.frame.ios14
+Name: Frame (Rootfull iOS 14+)
+Depends: mobilesubstrate,firmware (>= 13.7.9)
+Conflicts: com.zx02.frame.rootless,com.zx02.frame.ios13
+Description: Bring your iDevice to life with true video wallpapers.
+Maintainer: Zerui Chen
+Author: Zerui Chen
+Section: Tweaks
+Architecture: iphoneos-arm
+Version: 3.0.1
+Installed-Size: 4284

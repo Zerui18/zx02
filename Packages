@@ -103,10 +103,10 @@ Installed-Size: 4284
 Depends: mobilesubstrate,firmware (>= 13.7.9)
 Conflicts: com.zx02.frame.rootless,com.zx02.frame.ios13
 Filename: ./debs/frame/com.zx02.frame.ios14_3.0.1_iphoneos-arm.deb
-Size: 2284128
-MD5sum: e16f99b4a04706f944156f80e056d446
-SHA1: 0664f2a5e267afe88d30105926017d3a714e3358
-SHA256: 9219daf1e75e5719d95a4156f19dc5c103905705f7181e5934575fe0c7f5b18d
+Size: 2283236
+MD5sum: 096d5cc6035f3b68f170a9d666a30654
+SHA1: d7cafe705ddcc1e88b382678a8121f5bd690096b
+SHA256: 6be066c56e239066bcb7fdafc1e16c83c5ff084b8bf9bff8cbac8fc8d38ab6f0
 Section: Tweaks
 Description: Bring your iDevice to life with true video wallpapers.
 Author: Zerui Chen
